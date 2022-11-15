@@ -28,7 +28,7 @@ jobs:
         upstream_pull_args: '-s recursive -Xtheirs'
         
     - name: 'Set python'
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v1
       with:
           python-version: '3.8'
     - name: 'Install dependencies'
