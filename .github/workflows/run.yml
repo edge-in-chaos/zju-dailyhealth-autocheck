@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     - name: Sync with upstream
       if: github.repository != 'Dimlitter/zju-dailyhealth-autocheck'
@@ -28,7 +28,7 @@ jobs:
         upstream_pull_args: '-s recursive -Xtheirs'
         
     - name: 'Set python'
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v3
       with:
           python-version: '3.8'
     - name: 'Install dependencies'
